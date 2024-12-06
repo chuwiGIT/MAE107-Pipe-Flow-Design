@@ -16,3 +16,10 @@ MAE107 Pipe Flow Design Guide + References
 
 P.S. For my boys
 Y'all better do some work for real! >:0
+
+**References used in Video:
+**
+> Engineering ToolBox:
+>> Density [https://www.engineeringtoolbox.com/water-density-specific-weight-d_595.html]
+>> Viscosities [https://www.engineeringtoolbox.com/water-dynamic-kinematic-viscosity-d_596.html]
+>> Roughness [https://www.engineeringtoolbox.com/pressure-loss-steel-pipes-d_307.html]
