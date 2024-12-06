@@ -5,6 +5,8 @@ MAE107 Pipe Flow Design Guide + References
 
 **GS/Excel Colebrook Function:** [https://youtu.be/bX_KFrLiv18]
 
+**Example Spreadsheet (Modified!)**: [https://docs.google.com/spreadsheets/d/1eKtBhIShA-KR18u472Az9b6fqfpgjwo14XXgUOuSagI/edit?usp=sharing]
+
 > All content I have used will be uploaded onto here or imported from here.
 > Includes reference link to Google Sheets and short responses to the questions with example plots.
 
