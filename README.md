@@ -1,7 +1,7 @@
 # MAE107-Pipe-Flow-Design
 MAE107 Pipe Flow Design Guide + References
 
-**YouTube Walkthrough:** [link] 📹
+**YouTube Walkthrough:** [https://youtu.be/BajXlOrwX_o] 📹
 
 **GS/Excel Colebrook Function:** [https://youtu.be/bX_KFrLiv18]
 
