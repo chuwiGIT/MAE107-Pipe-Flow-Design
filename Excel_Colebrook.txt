@@ -1,0 +1,25 @@
+Function colebrook(Epsilon As Double, Re As Double, D As Double) As Double
+    Dim f As Double
+    Dim fOld As Double
+    Dim Tol As Double
+    Dim MaxIter As Integer
+    Dim Iter As Integer
+    
+    ' Initial guess for friction factor
+    f = 0.02
+    Tol = 0.000001
+    MaxIter = 100
+    Iter = 0
+    
+    Do
+        fOld = f
+        f = 1 / (-2 * (Log((Epsilon / (3.7 * D)) + (2.51 / (Re * Sqr(fOld))))) / Log(10)) ^ 2
+        Iter = Iter + 1
+    Loop While Abs(f - fOld) > Tol And Iter < MaxIter
+    
+    If Iter >= MaxIter Then
+        colebrook = CVErr(xlErrNum) ' Return an error if it doesn't converge
+    Else
+        colebrook = f
+    End If
+End Function

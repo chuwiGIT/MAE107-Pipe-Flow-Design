@@ -1,0 +1,29 @@
+function colebrook(roughness, reynolds, diameter) {
+  // Constants
+  const maxIterations = 100; // Maximum number of iterations
+  const tolerance = 1e-6; // Convergence tolerance
+  
+  // Initial guess for the friction factor
+  let f = 0.02; // Common initial guess for f
+
+  // Iterative calculation
+  for (let i = 0; i < maxIterations; i++) {
+    let f_new = 1 / Math.pow(
+      -2 * Math.log10(
+        roughness / (3.7 * diameter) + 2.51 / (reynolds * Math.sqrt(f))
+      ),
+      2
+    );
+
+    // Check for convergence
+    if (Math.abs(f - f_new) < tolerance) {
+      return f_new; // Converged value
+    }
+    
+    f = f_new; // Update for the next iteration
+  }
+
+  // If it fails to converge, throw an error
+  throw new Error("Colebrook equation did not converge.");
+}
+
